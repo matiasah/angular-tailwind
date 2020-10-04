@@ -37,7 +37,7 @@ module.exports = {
 ```
 
 ## Modify angular.json
-<pre lang="json">
+<pre>
 "build": {
   "builder": "<strong>@angular-builders/custom-webpack</strong>:browser",
   "options": {
