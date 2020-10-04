@@ -11,8 +11,8 @@ npm i -D tailwindcss postcss-import postcss-loader postcss-scss @angular-builder
 npx tailwind init
 ```
 
-# Create webpack.config.js at the root folder of the project
-```
+## Create webpack.config.js at the root folder of the project
+```js
 module.exports = {
     module: {
         rules: [
@@ -131,3 +131,15 @@ module.exports = {
   }
 },
 </pre>
+
+## Import the SCSS files at src/styles.scss
+```scss
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+```
+
+## If you're using Angular Material, import it like this
+```
+@import "@angular/material/_theming.scss";
+```
