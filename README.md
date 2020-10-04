@@ -11,8 +11,33 @@ npm i -D tailwindcss postcss-import postcss-loader postcss-scss @angular-builder
 npx tailwind init
 ```
 
+# Create webpack.config.js at the root folder of the project
+```
+module.exports = {
+    module: {
+        rules: [
+            {
+                test: /\.scss$/,
+                loader: "postcss-loader",
+                options: {
+                    postcssOptions: {
+                        ident: "postcss",
+                        syntax: "postcss-scss",
+                        plugins: [
+                            require("postcss-import"),
+                            require("tailwindcss"),
+                            require("autoprefixer"),
+                        ],
+                    },
+                },
+            },
+        ],
+    },
+};
+```
+
 ## Modify angular.json
-<pre>
+<pre lang="json">
 "build": {
   "builder": "<strong>@angular-builders/custom-webpack</strong>:browser",
   "options": {
