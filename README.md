@@ -55,11 +55,9 @@ module.exports = {
           "src/styles.scss"
       ],
       "scripts": [],
-      <strong>
-      "customWebpackConfig": {
+      <strong>"customWebpackConfig": {
           "path": "./webpack.config.js"
-      }
-      </strong>
+      }</strong>
   },
   "configurations": {
       "production": {
@@ -96,11 +94,9 @@ module.exports = {
   "builder": "<strong>@angular-builders/custom-webpack</strong>:dev-server",
   "options": {
       "browserTarget": "Frontend:build",
-      <strong>
-      "customWebpackConfig": {
+      <strong>"customWebpackConfig": {
           "path": "./webpack.config.js"
-      }
-      </strong>
+      }</strong>
   },
   "configurations": {
       "production": {
@@ -123,11 +119,9 @@ module.exports = {
           "src/styles.scss"
       ],
       "scripts": [],
-      <strong>
-      "customWebpackConfig": {
+      <strong>"customWebpackConfig": {
           "path": "./webpack.config.js"
-      }
-      </strong>
+      }</strong>
   }
 },
 </pre>
