@@ -1,5 +1,5 @@
-# Angular + Tailwind
-Instructions for Angular + Tailwind setup
+# Angular 11 + Tailwind
+Instructions for Angular 11 + Tailwind setup
 
 ## Install Tailwind
 ```
@@ -93,10 +93,7 @@ module.exports = {
 "serve": {
   "builder": "<strong>@angular-builders/custom-webpack</strong>:dev-server",
   "options": {
-      "browserTarget": "Frontend:build",
-      <strong>"customWebpackConfig": {
-          "path": "./webpack.config.js"
-      }</strong>
+      "browserTarget": "Frontend:build"
   },
   "configurations": {
       "production": {
