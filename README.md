@@ -3,7 +3,7 @@ Instructions for Angular 11 + Tailwind setup
 
 ## Install Tailwind
 ```
-npm i -D tailwindcss postcss-import postcss-loader postcss-scss @angular-builders/custom-webpack
+npm i -D tailwindcss postcss postcss-import postcss-loader postcss-scss @angular-builders/custom-webpack
 ```
 
 ## Initialize Tailwind
